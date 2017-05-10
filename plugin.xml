@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="my-custom-bis-plugin"
+    version="0.0.8">
+    <name>My Custom Plugin</name>
+    <description>Add BIS info to iOS plist file.</description>
+    <license>BSD-3</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <!-- ios -->
+    <platform name="ios">
+
+        <config-file parent="NSAppTransportSecurity" platform="ios" target="*-Info.plist">
+      <dict>
+        <key>ITSAppUsesNonExemptEncryption</key>
+        <false/>
+      </dict>
+    </config-file>
+     <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+    <array>
+        <string>spotify</string>
+      <string>deezer</string>
+      <string>fbapi</string>
+      <string>fb-messenger-api</string>
+      <string>fbauth2</string>
+      <string>fbshareextension</string>
+      <string>fb</string>
+      <string>twitter</string>
+      <string>gplus</string>
+      <string>pintrest</string>
+      <string>instagram</string>
+      <string>youtube</string>
+      <string>vnd.youtube</string>
+      <string>yelp</string>
+      <string>linkedin</string>
+      <string>tumblr</string>
+      <string>whatsapp</string>
+      <string>snapchat</string>
+      <string>comgooglemaps</string>
+      <string>amazon</string>
+      <string>skype</string>
+      <string>googledrive</string>
+      <string>itms-apps</string>
+      <string>tel</string>
+      <string>mailto</string>
+      <string>uber</string>
+      <string>lyft</string>
+      <string>sumupmerchant</string>
+      <string>yammer</string>
+      <string>salesforce</string>
+    </array>
+</config-file>
+
+<config-file platform="ios" target="*-Info.plist" parent="NSAppTransportSecurity">
+        <dict>
+            <key>NSAllowsArbitraryLoads</key>
+            <true/>
+        </dict>
+    </config-file>
+    <config-file platform="ios" target="*-Info.plist">
+      <key>NSPhotoLibraryUsageDescription</key>
+      <string>Pour nous envoyer la photo de ton cadeau</string>
+      <key>NSCameraUsageDescription</key>
+      <string>Pour nous envoyer la photo de ton cadeau</string>
+      <key>NSContactsUsageDescription</key>
+      <string>Afin de retrouver tes amis sur Choose</string>
+    </config-file>
+      <config-file parent="CFBundleInfoDictionaryVersion" platform="ios" target="*-Info.plist">
+      <string>9.0</string>
+    </config-file>
+    </platform>
+</plugin>

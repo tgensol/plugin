@@ -1,0 +1,40 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "my-custom-bis-plugin@~0.0.8",
+        "scope": null,
+        "escapedName": "my-custom-bis-plugin",
+        "name": "my-custom-bis-plugin",
+        "rawSpec": "~0.0.8",
+        "spec": ">=0.0.8 <2.3.0",
+        "type": "range"
+      },
+      "/Users/thibaut/Documents/choose/FRONT/choose/node_modules"
+    ]
+  ],
+  "name": "my-custom-bis-plugin",
+  "optionalDependencies": {},
+  "scripts": {},
+  "version": "0.0.8",
+  "dependencies": {},
+  "description": "Add BIS info to iOS plist file.",
+  "cordova": {
+    "id": "my-custom-bis-plugin",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "",
+  "license": "BSD-3"
+}
